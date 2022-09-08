@@ -45,7 +45,7 @@ function Review({ product }) {
           initialRating={rating}
           emptySymbol="fa fa-star-o fa-1x"
           fullSymbol="fa fa-star fa-1x"
-          onChange={(e) => setRating(e)}
+          onChange={(e) => setRating(e)} 
         />
         <input
           type="text"
