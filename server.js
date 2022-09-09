@@ -21,10 +21,10 @@ app.use(bodyParser.json());
 
 
 // db config
-// let mongoDBURL =
-//   "mongodb+srv://sandun:sandun@cluster0.xudiu.mongodb.net/mern-ecommerce";
+let mongoDBURL =
+  "mongodb+srv://sandun:sandun@cluster0.xudiu.mongodb.net/mern-ecommerce";
 
-mongoose.connect(process.env.mongoDBURL, {
+mongoose.connect(mongoDBURL, {
   useUnifiedTopology: true,
   useNewUrlParser: true,
 });
