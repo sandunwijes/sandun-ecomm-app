@@ -13,12 +13,8 @@ const port = process.env.PORT || 8000;
 const app = express();
 dotenv.config();
 
-
-
 //middleware
 app.use(bodyParser.json());
-
-
 
 // db config
 let mongoDBURL =
@@ -38,14 +34,10 @@ dbconnect.on("connected", () => {
   console.log("mongo db connection succesful");
 });
 
-
-
 //API routing
 app.use("/api/products/", productsRoute);
 app.use("/api/users/", userRoute);
 app.use("/api/orders/", orderRoute);
-
-
 
 //listen
 app.listen(port, () => console.log("Server Started"));
